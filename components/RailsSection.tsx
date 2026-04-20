@@ -36,7 +36,7 @@ export default function RailsSection() {
       </div>
 
       {/* Rails */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none flex justify-center w-full min-w-75 h-425 py-50">
+      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none flex justify-center w-full min-w-75 h-425 pt-50 pb-10">
         <Image
           src="/assets/Rails_2.png"
           alt="Rails Pattern"
@@ -73,7 +73,7 @@ export default function RailsSection() {
         </div>
 
         {/* Item 2 - Right */}
-        <div className="flex w-full justify-center md:justify-end md:pl-[100%] md:-mt-32">
+        <div className="flex w-full justify-center md:justify-end md:pl-[70%] md:-mt-32 -translate-x-5">
           <div className="flex flex-col items-center md:items-start min-w-60 md:mr-auto md:ml-16">
             <Image
               src="/assets/2.png"
