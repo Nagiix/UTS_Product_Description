@@ -27,3 +27,54 @@
 body {
   background: var(--color-base);
 }
+
+/* =========================================
+   CUSTOM ANIMATIONS
+   ========================================= */
+
+@layer utilities {
+  /* --- Animasi Hero Robot --- */
+  @keyframes slideUpRobot {
+    0% { transform: translate(0%, 200%); opacity: 0; }
+    100% { transform: translate(0%, 0); opacity: 1; }
+  }
+
+  .animate-robot {
+    animation: slideUpRobot 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .robot {
+    scale: 1;
+    transition: all 0.5s ease-in;
+  }
+
+  .robot:hover {
+    scale: 1.2;
+  }
+
+  /* --- Animasi Section Rails (Zigzag) --- */
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes idleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+  }
+
+  @keyframes fadeInAcc {
+    0% { opacity: 0; }
+    100% { opacity: 0.8; }
+  }
+
+  /* Class Implementasi Accessories */
+  .anim-acc-1 { opacity: 0; animation: fadeInAcc 1.5s ease-out 0.5s forwards; }
+  .anim-acc-2 { opacity: 0; animation: fadeInAcc 1.5s ease-out 0.8s forwards; }
+  .anim-acc-3 { opacity: 0; animation: fadeInAcc 1.5s ease-out 1.1s forwards; }
+
+  /* Class Implementasi Robot */
+  .anim-bot-1 { opacity: 0; animation: fadeInUp 1s ease-out 1.2s forwards, idleFloat 3s ease-in-out 2.2s infinite; }
+  .anim-bot-2 { opacity: 0; animation: fadeInUp 1s ease-out 1.5s forwards, idleFloat 3.2s ease-in-out 2.5s infinite; }
+  .anim-bot-3 { opacity: 0; animation: fadeInUp 1s ease-out 1.8s forwards, idleFloat 2.8s ease-in-out 2.8s infinite; }
+}
