@@ -11,17 +11,53 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-4">
 
           {/* HERO */}
-          <section className="col-span-12 md:col-start-2 md:col-end-12 py-10 md:py-20">
+          <section className="col-span-12 md:col-start-2 md:col-end-12 my-10 md:py-0">
+            
+            {/* Custom Animation Keyframes */}
+            <style>{`
+              @keyframes slideUpRobot {
+                0% { transform: translate(0%, 200%); opacity: 0; }
+                100% { transform: translate(0%, 0); opacity: 1; }
+              }
+              .animate-robot {
+                animation: slideUpRobot 2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+              }
+              
+              .robot{
+                scale:1;
+                transition:all 0.5s ease-in;
+              }
 
-            <div className="w-full">
+              .robot:hover{
+                scale:1.2;
+              }
+            `}</style>
+
+            {/* relative dan overflow-hidden di sini penting agar robot terpotong saat di bawah */}
+            <div className="w-full overflow-hidden relative rounded-xl">
+              
+              {/* Background Hero */}
               <Image
-                src="/assets/HERO.png"
-                alt="Hero"
+                src="/assets/HERO_without_obj.png"
+                alt="Hero Background"
                 width={1440}
                 height={800}
-                className="w-full h-auto block"
+                className="w-full h-auto block relative z-0"
                 priority
               />
+
+              {/* Robot Image - Muncul dari Bawah */}
+              <div className="absolute bottom-0 right-0 z-10 w-full animate-robot robot">
+                <Image
+                  src="/assets/robot_hero.png" /* Sesuaikan ekstensi file jika pakai .jpg */
+                  alt="Hero Robot"
+                  width={1200}
+                  height={800}
+                  className="w-full h-auto object-contain object-bottom drop-shadow-2xl"
+                  priority
+                />
+              </div>
+
             </div>
 
           </section>
