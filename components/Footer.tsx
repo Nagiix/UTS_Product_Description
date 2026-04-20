@@ -8,7 +8,7 @@ export default function Footer() {
         alt="Footer"
         width={1440}
         height={400}
-        className="w-full h-auto block"
+        className="w-full h-auto block scale-115"
       />
     </footer>
   );
