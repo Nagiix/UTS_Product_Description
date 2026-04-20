@@ -1,6 +1,6 @@
 export default function InfoSection() {
   return (
-    <section className="col-span-12 md:col-start-2 px-25 md:col-end-12 relative pb-10 md:pb-20">
+    <section className="col-span-12 md:col-start-2 px-25 md:col-end-12 relative pb-10">
       <div className="flex flex-col md:flex-row justify-between w-full relative z-10">
         <div className="flex flex-col gap-6 md:gap-8">
           <div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function RailsSection() {
   return (
-    <section className="col-span-12 relative flex flex-col items-center py-10 md:py-20 w-full mt-10">
+    <section className="col-span-12 relative flex flex-col items-center w-full">
       {/* Background Accessories */}
       <div className="absolute inset-0 pointer-events-none z-0">
         <Image
@@ -10,32 +10,39 @@ export default function RailsSection() {
           alt="Decoration Top"
           width={400}
           height={400}
-          className="absolute top-[5%] -right-[15%] md:-right-[5%] w-64 md:w-100 h-auto translate-x-15 anim-acc-1"
+          className="absolute top-[5%] -right-[15%] md:-right-[5%] w-64 md:w-130 h-auto translate-x-15 -translate-y-120 anim-acc-1"
         />
         <Image
           src="/assets/accesories2.png"
           alt="Decoration Middle"
           width={400}
           height={400}
-          className="absolute top-[40%] -left-[15%] md:-left-[5%] w-64 md:w-100 h-auto -translate-x-15 anim-acc-2"
+          className="absolute top-[40%] -left-[15%] md:-left-[5%] w-64 md:w-130 h-auto -translate-x-15 -translate-y-120 anim-acc-2"
         />
         <Image
           src="/assets/accesories.png"
           alt="Decoration Bottom"
           width={400}
           height={400}
-          className="absolute bottom-[5%] -right-[15%] md:-right-[5%] w-64 md:w-100 h-auto translate-x-15 anim-acc-3"
+          className="absolute bottom-[5%] -right-[15%] md:-right-[5%] w-64 md:w-130 h-auto translate-x-15 -translate-y-80 anim-acc-3"
+        />
+        <Image
+          src="/assets/accesories2.png"
+          alt="Decoration Middle"
+          width={400}
+          height={400}
+          className="absolute top-[80%] -left-[15%] md:-left-[5%] w-64 md:w-130 h-auto -translate-x-15 -translate-y-90 anim-acc-4"
         />
       </div>
 
       {/* Rails */}
-      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none flex justify-center w-full max-w-75">
+      <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 z-0 pointer-events-none flex justify-center w-full min-w-75 h-425 py-50">
         <Image
-          src="/assets/Rails.png"
+          src="/assets/Rails_2.png"
           alt="Rails Pattern"
           width={300}
           height={1200}
-          className="w-full h-auto object-contain opacity-90"
+          className="w-full h-auto object-contain opacity-90 scale-120"
         />
       </div>
 

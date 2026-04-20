@@ -72,6 +72,7 @@ body {
   .anim-acc-1 { opacity: 0; animation: fadeInAcc 1.5s ease-out 0.5s forwards; }
   .anim-acc-2 { opacity: 0; animation: fadeInAcc 1.5s ease-out 0.8s forwards; }
   .anim-acc-3 { opacity: 0; animation: fadeInAcc 1.5s ease-out 1.1s forwards; }
+  .anim-acc-3 { opacity: 0; animation: fadeInAcc 1.5s ease-out 1.4s forwards; }
 
   /* Class Implementasi Robot */
   .anim-bot-1 { opacity: 0; animation: fadeInUp 1s ease-out 1.2s forwards, idleFloat 3s ease-in-out 2.2s infinite; }
