@@ -60,13 +60,10 @@ export default function RailsSection() {
             />
             <div className="mt-6 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
               <h3 className="text-[#C13A28] font-bold text-2xl md:text-3xl italic tracking-wide">
-                DESCRIPTION asdsad
+                What & Who
               </h3>
-              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed">
-                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;
+              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed text-justify">
+           This product is designed for toy collectors, Japanese pop culture enthusiasts, and model kit hobbyists, ranging from teenagers to adults (15+). Gunpla is a robot model kit made from high-quality plastic, featuring a futuristic design in red, white, and black. It consists of assembleable parts with movable joints, making it ideal for both display and collection.
               </p>
             </div>
           </div>
@@ -84,20 +81,17 @@ export default function RailsSection() {
             />
             <div className="mt-6 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
               <h3 className="text-[#C13A28] font-bold text-2xl md:text-3xl italic tracking-wide">
-                DESCRIPTION
+                Where & When
               </h3>
-              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed">
-                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;
+              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed text-justify">
+              Gunpla is typically used indoors, such as in bedrooms, study desks, or workspaces, as both a hobby and a decorative piece. It is usually assembled during free time, like afternoons, evenings, or weekends. Once completed, it can be displayed on shelves or desks and enjoyed anytime as part of a personal collection.
               </p>
             </div>
           </div>
         </div>
 
         {/* Item 3 - Left */}
-        <div className="flex w-full justify-center md:justify-start md:pr-[100%] md:-mt-32 -translate-y-30">
+        <div className="flex w-full justify-center md:justify-start md:pr-[100%] md:-mt-60 -translate-y-30">
           <div className="flex flex-col items-center md:items-start min-w-65 md:ml-auto md:mr-16">
             <Image
               src="/assets/3.png"
@@ -108,13 +102,10 @@ export default function RailsSection() {
             />
             <div className="mt-6 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
               <h3 className="text-[#C13A28] font-bold text-2xl md:text-3xl italic tracking-wide">
-                DESCRIPTION
+                Why & How
               </h3>
-              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed">
-                &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;
+              <p className="text-black text-xs md:text-sm mt-3 font-medium leading-relaxed text-justify">
+              Gunpla offers a fun and engaging building experience while helping develop precision, patience, and creativity. Its detailed design also makes it perfect for display or collection. The model is assembled by following the instructions without the need for glue. Once completed, it can be posed and displayed according to your preference.
               </p>
             </div>
           </div>
