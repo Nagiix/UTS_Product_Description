@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ModelViewerWrapper from '../components/ModelViewerWrapper'
 
 export default function RailsSection() {
   return (
@@ -50,15 +51,11 @@ export default function RailsSection() {
       <div className="relative z-10 w-full flex flex-col gap-20 md:gap-10 max-w-250 mx-auto">
         {/* Item 1 - Left */}
         <div className="flex w-full justify-start md:justify-start md:pr-[100%] translate-y-30">
-          <div className="flex flex-col items-start md:items-start min-w-55 md:ml-auto md:mr-16">
-            <Image
-              src="/assets/1.png"
-              alt="Robot 1"
-              width={500}
-              height={700}
-              className="w-full h-auto object-contain drop-shadow-2xl anim-bot-1"
-            />
-            <div className="mt-6 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
+          <div className="mt-6 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
+            <div className="w-full flex justify-center -mb-4 anim-bot-1 drop-shadow-2xl anim-bot-1">
+              <ModelViewerWrapper />
+            </div>
+            <div className="mt-2 text-center md:text-left bg-[#F4ECDF]/70 p-4 rounded-xl backdrop-blur-sm shadow-sm md:bg-transparent md:p-0 md:backdrop-blur-none md:shadow-none">
               <h3 className="text-[#C13A28] font-bold text-2xl md:text-3xl italic tracking-wide">
                 What & Who
               </h3>
@@ -92,7 +89,7 @@ export default function RailsSection() {
 
         {/* Item 3 - Left */}
         <div className="flex w-full justify-center md:justify-start md:pr-[100%] md:-mt-60 -translate-y-30">
-          <div className="flex flex-col items-center md:items-start min-w-65 md:ml-auto md:mr-16">
+          <div className="flex flex-col items-center md:items-start min-w-75 md:ml-auto md:mr-16">
             <Image
               src="/assets/3.png"
               alt="Robot 3"
